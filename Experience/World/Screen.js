@@ -22,6 +22,9 @@ export default class Screen {
         document.body.appendChild(this.cssRenderer.domElement);
         this.cssRenderer.render(this.cssScene, this.experience.camera.perspectiveCamera);
     }
+    resize(){
+        this.cssRenderer.setSize(this.sizes.width, this.sizes.height)
+    }
 
     setIfame() {
         this.iframe = document.createElement('iframe');
