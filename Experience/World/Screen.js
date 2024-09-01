@@ -20,6 +20,7 @@ export default class Screen {
         this.cssRenderer.domElement.style.position = 'absolute';
         this.cssRenderer.domElement.style.top = 0;
         document.body.appendChild(this.cssRenderer.domElement);
+        this.cssRenderer.render(this.cssScene, this.experience.camera.perspectiveCamera);
     }
 
     setIfame() {
