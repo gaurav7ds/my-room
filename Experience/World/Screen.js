@@ -28,7 +28,7 @@ export default class Screen {
 
     setIfame() {
         this.iframe = document.createElement('iframe');
-        this.iframe.src = 'https://66d41b4cb15368eea437f837--transcendent-mooncake-16f849.netlify.app/';
+        this.iframe.src = 'https://my-folio-omega.vercel.app/';
         this.iframe.style.width = '1200px';
         this.iframe.style.height = '800px';
         this.iframe.style.border = 'none';
