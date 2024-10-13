@@ -19,6 +19,7 @@ export default class Screen {
         this.cssRenderer.setSize(this.sizes.width, this.sizes.height);
         this.cssRenderer.domElement.style.position = 'absolute';
         this.cssRenderer.domElement.style.top = 0;
+        this.cssRenderer.domElement.style.zIndex = 1; 
         document.body.appendChild(this.cssRenderer.domElement);
         this.cssRenderer.render(this.cssScene, this.experience.camera.perspectiveCamera);
     }
@@ -35,6 +36,7 @@ export default class Screen {
 
         this.iframe.style.overflow = 'auto';
         this.iframe.tabIndex = 0;
+        this.iframe.style.zIndex = 2; 
         this.cssObject = new CSS3DObject(this.iframe);        
         if(this.sizes.width < 1000){
             this.cssObject.position.set(-9.47,-6.88,-12.701)

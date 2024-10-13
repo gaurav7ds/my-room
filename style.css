@@ -96,6 +96,23 @@ html{
   font-weight: 600;
   color: white;
   cursor: pointer;
+  transition: all .3s;
+  position: relative;
+  width: fit-content;
+}
+.link p::before{
+  content: "";
+  position: absolute;
+  bottom: -.6rem;
+  height: 4px;
+  left: 0;
+  width: 0;
+  background-color: #c03740;
+  transition: all .3s;
+}
+
+.link p:hover::before{
+  width: 100%;
 }
 
 
